@@ -9,6 +9,10 @@ A modular login system built with Node.js and MongoDB for user registration and 
 * Screenshots
 * License
 
+## Important Note
+
+For the Backend Directory, Refer my other Repository https://github.com/BhargavA29/Modular-Login-System-withoutUI
+
 ## Features
 * User Registration with Username, Email, and Password
 * User Login with Email and Password
