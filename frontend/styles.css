@@ -1,0 +1,163 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Container Styles */
+.container {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    box-sizing: border-box;
+}
+
+.brand-logo {
+    width: 80px;
+    height: 80px;
+    background: url('./images/bg-logo.png') no-repeat center center;
+    background-size: cover;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.brand-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    letter-spacing: 1.2px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #6a11cb;
+    box-shadow: 0 0 8px rgba(106, 17, 203, 0.2);
+    outline: none;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a11cb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #5b10b5;
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+    animation: shake 0.3s ease-in-out;
+}
+
+/* Redirect Link Styles */
+.redirect-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.redirect-link a {
+    color: #6a11cb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.redirect-link a:hover {
+    color: #5b10b5;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    20%, 60% {
+        transform: translateX(-10px);
+    }
+    40%, 80% {
+        transform: translateX(10px);
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+}
+
+@media (max-height: 480px) {
+    .container {
+        padding: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
