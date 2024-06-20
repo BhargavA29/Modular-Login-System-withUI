@@ -105,6 +105,9 @@ For the Backend Directory, Refer my other Repository https://github.com/BhargavA
 
   ![loginpage](https://github.com/BhargavA29/Modular-Login-System-withUI/assets/110214447/e2208d84-91d7-494b-bc70-03bda380fbc0)
 
+  ![registerpage](https://github.com/BhargavA29/Modular-Login-System-withUI/assets/110214447/2d7fc102-3fc6-457e-a269-b7c748d7bd0c)
+
+
 
   ## Contributing
 
